@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "mine",
+  "description": "miNE(new blog) - no CMS, only marked",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
