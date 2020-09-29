@@ -17,34 +17,15 @@
     margin-bottom: 0.5em;
   }
 
-  p {
+  /* p {
     font-size: 1.4em;
     line-height: 1.5;
-  }
-
-  figure {
-    margin: 0 1em;
-    text-align: center;
-  }
-
-  figcaption {
-    font-size: .8em;
-    font-style: italic;
-  }
-
-  img {
-    width: 100%;
-    max-width: 400px;
-  }
+  } */
 
   @media (max-width: 1020px) {
-    p {
+    /* p {
       font-size: 1.2em;
-    }
-
-    img {
-      max-width: 300px;
-    }
+    } */
   }
 
   @media (max-width: 800px) {
@@ -66,12 +47,6 @@
 
 <div class="home-container">
   <div class="home-copy">
-    <h1>Welcome to your new Sapper Blog</h1>
-    <p>Check out the docs on <a href="https://www.github.com/Charca/sapper-blog-template" target="_blank">GitHub</a> to get started.</p>
+    <h1>Oops! You have found this page well. Sorry, This is just a personal page!</h1>
   </div>
-
-  <figure>
-    <img alt='Person typing on laptop' src='undraw-illustration.svg'>
-    <figcaption>Illustration thanks to <a href="https://undraw.co" target="_blank">Undraw</a></figcaption>
-  </figure>
 </div>
