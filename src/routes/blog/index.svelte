@@ -11,21 +11,24 @@
 </script>
 
 <style>
-  h2,
-  .post-item-footer {
-    font-weight: 700;
-  }
+.post-item {
+  border: solid 8px #000;
+  padding: 10px;
+  margin: 8px 0;
+}
 
-  .post-item-date {
-    color: #AAA;
-    text-align: left;
-    text-transform: uppercase;
-    margin-right: 16px;
-  }
+.post-item-date {
+  color: #AAA;
+  text-align: left;
+  text-transform: uppercase;
+  margin-right: 16px;
+}
 
-  hr {
-    margin: 60px auto;
-  }
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 </style>
 
 <svelte:head>
@@ -35,9 +38,6 @@
 <div class="container">
   <h1>Blog</h1>
   {#each posts as post, index}
-    {#if index}
-      <hr />
-    {/if}
     <div class="post-item">
       <h2>
         <a rel='prefetch' href='blog/{post.slug}'>{post.title}</a>

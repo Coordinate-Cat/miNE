@@ -32,23 +32,17 @@
     text-transform: uppercase;
     font-weight: 600;
   }
-
-  header hr {
-    min-width: 100px;
-    width: 30%;
-  }
 </style>
 
 <svelte:head>
   <title>{post.title}</title>
 </svelte:head>
 
-<header>
-  <p>{post.printDate} ~ {post.printReadingTime}</p>
-  <h1>{post.title}</h1>
-  <hr />
-</header>
 <div class="container">
+  <header>
+    <p>{post.printDate} ~ {post.printReadingTime}</p>
+    <h1>{post.title}</h1>
+  </header>
   <article class="content">
     {@html post.html}
   </article>

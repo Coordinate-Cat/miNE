@@ -1,19 +1,218 @@
 <style>
-  @media (max-width: 1020px) {
-
+h3 {
+  margin-bottom: 15px;
+}
+h4::before {
+	content: '> ';
+}
+h5::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f07c';
+  font-size: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
   }
+img {
+  max-width: 200px;
+  box-shadow: 15px 15px #000;
+}
+.container {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+}
+.knowledge {
+  font-size: 24px;
+  color: #fff;
+  border: 2px solid #fff;
+	padding-top: 6.125px;
+	padding-bottom: 7px;
+	padding-left: 10.5px;
+	padding-right: 11.5px;
+}
+.profile {
+  margin-top: 20px;
+}
+.profile-resume {
+  margin-top: 20px;
+}
+.profile-text {
+  margin-top: 15px;
+}
+.profile-text-description {
+  margin-bottom: 5px;
+	color: #55FF55
+}
+
+.tree {
+  margin-top: -18px;
+}
+.tree, .tree ul, .tree li {
+  position: relative;
+  color: #fff;
+}
+.tree ul {
+  list-style: none;
+  padding-left: 32px;
+}
+.tree li::before, .tree li::after {
+  content: "";
+  position: absolute;
+  left: -12px;
+}
+.tree li::before {
+  border-top: 2px solid #fff;
+  top: 9px;
+  width: 8px;
+  height: 0;
+}
+.tree li::after {
+  border-left: 2px solid #fff;
+  height: 100%;
+  width: 0px;
+  top: 2px;
+}
+.tree ul > li:last-child::after {
+    height: 8px;
+}
 </style>
 
 <svelte:head>
-  <title>About</title>
+	<title>About</title>
 </svelte:head>
 
+<h1>About me</h1>
+
 <div class="container">
-  <h1>About</h1>
-  <p>Text placeholder via <a href="https://jeffsum.com/" target="_blank">Jeffsum</a>.</p>
-  <p>So you two dig up, dig up dinosaurs? What do they got in there? King Kong? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard! Life finds a way. God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.</p>
-  <p>You really think you can fly that thing? You know what? It is beets. I've crashed into a beet truck. Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
-  <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Hey, take a look at the earthlings. Goodbye! I was part of something special. Just my luck, no ice. You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
-  <p>Jaguar shark! So tell me - does it really exist? This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, without the oops! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
-  <p>Yes, Yes, without the oops! Do you have any idea how long it takes those cups to decompose. They're using our own satellites against us. And the clock is ticking. Do you have any idea how long it takes those cups to decompose. My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
+  <div class="item">
+    <div class="profile">
+      <img src="me.png" alt="me">
+
+      <div class="profile-resume">
+        <h2>Ocat</h2>
+      </div>
+
+      <div class="profile-text">
+        <h3>Resume</h3>
+        <h4>Location</h4>
+        <p class="profile-text-description">Tokyo/Japan</p>
+        <h4>Email</h4>
+        <p class="profile-text-description">catjp@protonmail.ch</p>
+        <h4>Jobs</h4>
+        <p class="profile-text-description">Frontend Engineer</p>
+        <h4>Tertiary</h4>
+        <p class="profile-text-description">
+          Public Management of Economics in KINDAI University<br>
+          Higashiosaka City (Osaka Prefecture)<br>
+          Batch 2016-2020
+        </p>
+        <h4>Secondary</h4>
+        <p class="profile-text-description">
+          Chiben Gakuen Senior High School (Nara Prefecture)<br>
+          Participated in the 66th All-Japan High School Ekiden Championship<br>
+          Batch 2013-2015
+        </p>
+      </div>
+
+      <p>The design was inspired by <a href="https://kristopolous.github.io/BOOTSTRA.386/index.html" target=”_blank”>BOOTSTRA.386</a></p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="profile">
+      <p class="knowledge">Knowledge tree structure</p>
+      <div class="tree">
+        <ul>
+        <!-- from here -->
+          <li>
+            <h5>Web</h5>
+            <ul>
+
+              <li>
+                <h5>Icons</h5>
+                <ul>
+                  <li><a href="https://fontawesome.com/">Font Awesome</a></li>
+                  <li><a href="https://css.gg/">css.gg</a></li>
+                  <li><a href="https://icones.js.org/">Icones</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <h5>Article</h5>
+                <ul>
+                  <li>Banana</li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+          <li>
+            <h5>web</h5>
+            <ul>
+              <li>Beef</li>
+              <li>Pork</li>
+            </ul>
+          </li>
+
+          <li>
+            <h5>web</h5>
+            <ul>
+              <li>Beef</li>
+              <li>Pork</li>
+            </ul>
+          </li>
+
+          <li>
+            <h5>web</h5>
+            <ul>
+              <li>Beef</li>
+              <li>Pork</li>
+            </ul>
+          </li>
+
+          <li>
+            <h5>web</h5>
+            <ul>
+              <li>Beef</li>
+              <li>Pork</li>
+            </ul>
+          </li>
+
+          <li>
+            <h5>web</h5>
+            <ul>
+              <li>Beef</li>
+              <li>Pork</li>
+            </ul>
+          </li>
+
+          <li>
+            <h5>web</h5>
+            <ul>
+              <li>Beef</li>
+              <li>Pork</li>
+            </ul>
+          </li>
+
+          <li>
+            <h5>web</h5>
+            <ul>
+              <li>Beef</li>
+              <li>Pork</li>
+            </ul>
+          </li>
+
+          <li>
+            <h5>web</h5>
+            <ul>
+              <li>Beef</li>
+              <li>Pork</li>
+            </ul>
+          </li>
+        <!-- So far -->
+        </ul>
+      </div>
+    </div>
+
+  </div>
 </div>
