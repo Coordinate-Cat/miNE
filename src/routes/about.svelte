@@ -24,13 +24,26 @@ summary {
 summary::-webkit-details-marker {
   display: none;
 }
+@media (max-width:480px) {
+  .container {
+    flex-wrap: wrap !important;
+  }
+
+  .item {
+      width: 100% !important;
+  }
+}
 .container {
   display: flex;
   margin-top: 20px;
   width: 100%;
 }
-.knowledge {
+.item {
+  width: 50%;
+}
+.about-h2 {
   font-size: 24px;
+  width: fit-content;
   color: #fff;
   border: 2px solid #fff;
 	padding-top: 6.125px;
@@ -42,7 +55,7 @@ summary::-webkit-details-marker {
   margin-top: 20px;
 }
 .profile-resume {
-  margin-top: 20px;
+  margin: 10px 0;
 }
 .profile-text {
   margin-top: 15px;
@@ -94,14 +107,17 @@ summary::-webkit-details-marker {
 <div class="container">
   <div class="item">
     <div class="profile">
-      <img src="me.png" alt="me">
 
       <div class="profile-resume">
-        <h2>Ocat</h2>
+        <h2 class="about-h2">profile</h2>
       </div>
+
+      <img src="me.png" alt="me">
 
       <div class="profile-text">
         <h3>Resume</h3>
+        <h4>Name</h4>
+        <p class="profile-text-description">Ocat</p>
         <h4>Location</h4>
         <p class="profile-text-description">Tokyo/Japan</p>
         <h4>Email</h4>
@@ -127,17 +143,17 @@ summary::-webkit-details-marker {
   </div>
   <div class="item">
     <div class="profile">
-      <p class="knowledge">Knowledge tree structure</p>
+      <h2 class="about-h2">Knowledge tree structure</h2>
       <div class="tree">
         <ul>
         <!-- from here -->
           <li>
-            <details>
+            <details open>
               <summary><h5>Web</h5></summary>
               <ul>
 
                 <li>
-                  <details>
+                  <details open>
                   <summary><h5>Icons</h5></summary>
                   <!-- <h5>Icons</h5> -->
                   <ul>
@@ -149,7 +165,7 @@ summary::-webkit-details-marker {
                 </li>
 
                 <li>
-                  <details>
+                  <details open>
                   <summary><h5>Article</h5></summary>
                   <!-- <h5>Icons</h5> -->
                   <ul>
@@ -165,7 +181,7 @@ summary::-webkit-details-marker {
           </li>
 
           <li>
-            <details>
+            <details open>
               <summary><h5>TEST</h5></summary>
               <ul>
                 <li>Beef</li>

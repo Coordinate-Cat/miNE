@@ -5,24 +5,24 @@
     margin-top: 20px;
     width: 100%;
   }
-  .item2 {
-    margin: 0 20px;
-  }
-  .item3 {
-    width: 100%;
-  }
   img {
     max-width: 450px;
     height: auto;
   }
-  @media (max-width: 1020px) {
-    /* p {
-      font-size: 1.2em;
-    } */
+  @media (max-width:480px) {
+  .container {
+    flex-wrap: wrap !important;
   }
 
-  @media (max-width: 800px) {
+  .item {
+      width: auto !important;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 </style>
 
 <svelte:head>
@@ -38,18 +38,18 @@
     <img src="ibm.gif" alt="">
     <img src="internet-ex.gif" alt="">
   </div>
-  <div class="item2">
+  <div class="item">
     <img src="pentium.gif" alt="">
     <img src="mac-mall.gif" alt="">
     <img src="match-com.gif" alt="">
     <img src="pizza-hut.gif" alt="">
     <img src="postnet.gif" alt="">
   </div>
-  <div class="item3">
+  <div class="item">
     <img src="mcdonalds.gif" alt="">
+    <img src="microsoft.gif" alt="">
     <img src="internet-explorer.gif" alt="">
     <img src="netscape-mini.gif" alt="">
     <img src="quicktime.gif" alt="">
-    <img src="microsoft.gif" alt="">
   </div>
 </div>

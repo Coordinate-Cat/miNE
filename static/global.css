@@ -63,7 +63,7 @@ h2 {
 
 h3 {
 	color: #fff;
-	animation:blinkingText 3.0s infinite;
+	animation:blinkingText 2.0s infinite;
 	border: 2px solid #fff;
 	padding-top: 6.125px;
 	padding-bottom: 7px;
@@ -74,10 +74,10 @@ h3 {
 
 @keyframes blinkingText{
   1%{ visibility: hidden;  }
-  49%{ visibility: hidden;  }
+  20%{ visibility: hidden;  }
   60%{ visibility: visible; }
   99%{ visibility: visible;  }
-  100%{ visibility: hidden;  }
+  100%{ visibility: visible;  }
 }
 
 h4 {
