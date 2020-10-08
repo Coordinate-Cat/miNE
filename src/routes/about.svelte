@@ -16,6 +16,14 @@ img {
   max-width: 200px;
   box-shadow: 15px 15px #000;
 }
+summary {
+  cursor: pointer;
+  outline: none;
+  height: 20px;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
 .container {
   display: flex;
   margin-top: 20px;
@@ -53,7 +61,7 @@ img {
 }
 .tree ul {
   list-style: none;
-  padding-left: 32px;
+  padding-left: 24px;
 }
 .tree li::before, .tree li::after {
   content: "";
@@ -124,90 +132,46 @@ img {
         <ul>
         <!-- from here -->
           <li>
-            <h5>Web</h5>
-            <ul>
+            <details>
+              <summary><h5>Web</h5></summary>
+              <ul>
 
-              <li>
-                <h5>Icons</h5>
-                <ul>
-                  <li><a href="https://fontawesome.com/">Font Awesome</a></li>
-                  <li><a href="https://css.gg/">css.gg</a></li>
-                  <li><a href="https://icones.js.org/">Icones</a></li>
-                </ul>
-              </li>
+                <li>
+                  <details>
+                  <summary><h5>Icons</h5></summary>
+                  <!-- <h5>Icons</h5> -->
+                  <ul>
+                    <li><a href="https://fontawesome.com/">Font Awesome</a></li>
+                    <li><a href="https://css.gg/">css.gg</a></li>
+                    <li><a href="https://icones.js.org/">Icones</a></li>
+                  </ul>
+                  </details>
+                </li>
 
-              <li>
-                <h5>Article</h5>
-                <ul>
-                  <li>Banana</li>
-                </ul>
-              </li>
+                <li>
+                  <details>
+                  <summary><h5>Article</h5></summary>
+                  <!-- <h5>Icons</h5> -->
+                  <ul>
+                    <li><a href="https://fontawesome.com/">Font Awesome</a></li>
+                    <li><a href="https://css.gg/">css.gg</a></li>
+                    <li><a href="https://icones.js.org/">Icones</a></li>
+                  </ul>
+                  </details>
+                </li>
 
-            </ul>
+              </ul>
+            </details>
           </li>
 
           <li>
-            <h5>web</h5>
-            <ul>
-              <li>Beef</li>
-              <li>Pork</li>
-            </ul>
-          </li>
-
-          <li>
-            <h5>web</h5>
-            <ul>
-              <li>Beef</li>
-              <li>Pork</li>
-            </ul>
-          </li>
-
-          <li>
-            <h5>web</h5>
-            <ul>
-              <li>Beef</li>
-              <li>Pork</li>
-            </ul>
-          </li>
-
-          <li>
-            <h5>web</h5>
-            <ul>
-              <li>Beef</li>
-              <li>Pork</li>
-            </ul>
-          </li>
-
-          <li>
-            <h5>web</h5>
-            <ul>
-              <li>Beef</li>
-              <li>Pork</li>
-            </ul>
-          </li>
-
-          <li>
-            <h5>web</h5>
-            <ul>
-              <li>Beef</li>
-              <li>Pork</li>
-            </ul>
-          </li>
-
-          <li>
-            <h5>web</h5>
-            <ul>
-              <li>Beef</li>
-              <li>Pork</li>
-            </ul>
-          </li>
-
-          <li>
-            <h5>web</h5>
-            <ul>
-              <li>Beef</li>
-              <li>Pork</li>
-            </ul>
+            <details>
+              <summary><h5>TEST</h5></summary>
+              <ul>
+                <li>Beef</li>
+                <li>Pork</li>
+              </ul>
+            </details>
           </li>
         <!-- So far -->
         </ul>
