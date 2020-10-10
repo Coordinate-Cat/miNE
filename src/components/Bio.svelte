@@ -19,7 +19,7 @@
 </style>
 
 <div>
-  <img src="me.png" alt="Oka">
+  <img src="./image/me.png" alt="Oka">
   <p>
     Hi, I'm <strong>Oka</strong>.
     see some of my work on <a href="https://www.github.com/Coordinate-Cat" target="_blank">GitHub</a>,

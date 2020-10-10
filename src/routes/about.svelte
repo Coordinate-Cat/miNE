@@ -112,7 +112,7 @@ summary::-webkit-details-marker {
         <h2 class="about-h2">profile</h2>
       </div>
 
-      <img src="me.png" alt="me">
+      <img src="./image/me.png" alt="me">
 
       <div class="profile-text">
         <h3>Resume</h3>
