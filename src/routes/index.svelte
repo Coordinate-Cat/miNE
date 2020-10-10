@@ -26,30 +26,30 @@
 </style>
 
 <svelte:head>
-  <title>Sapper Blog Template</title>
+  <title>miNE</title>
 </svelte:head>
 
 <h1>Oops! You have found this page well. Sorry, This is just a personal page!</h1>
 <div class="container">
   <div class="item">
-    <img src="apple-1997.jpg" alt="">
-    <img src="yahoo.gif" alt="">
-    <img src="netscape.gif" alt="">
-    <img src="ibm.gif" alt="">
-    <img src="internet-ex.gif" alt="">
+    <img src="./gif/apple-1997.jpg" alt="">
+    <img src="./gif/yahoo.gif" alt="">
+    <img src="./gif/netscape.gif" alt="">
+    <img src="./gif/ibm.gif" alt="">
+    <img src="./gif/internet-ex.gif" alt="">
   </div>
   <div class="item">
-    <img src="pentium.gif" alt="">
-    <img src="mac-mall.gif" alt="">
-    <img src="match-com.gif" alt="">
-    <img src="pizza-hut.gif" alt="">
-    <img src="postnet.gif" alt="">
+    <img src="./gif/pentium.gif" alt="">
+    <img src="./gif/mac-mall.gif" alt="">
+    <img src="./gif/match-com.gif" alt="">
+    <img src="./gif/pizza-hut.gif" alt="">
+    <img src="./gif/postnet.gif" alt="">
   </div>
   <div class="item">
-    <img src="mcdonalds.gif" alt="">
-    <img src="microsoft.gif" alt="">
-    <img src="internet-explorer.gif" alt="">
-    <img src="netscape-mini.gif" alt="">
-    <img src="quicktime.gif" alt="">
+    <img src="./gif/mcdonalds.gif" alt="">
+    <img src="./gif/microsoft.gif" alt="">
+    <img src="./gif/internet-explorer.gif" alt="">
+    <img src="./gif/netscape-mini.gif" alt="">
+    <img src="./gif/quicktime.gif" alt="">
   </div>
 </div>
