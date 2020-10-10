@@ -16,4 +16,5 @@ Test: Cypress
 <hr>
 
 ## Deploy with Vercel
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d909b0478b8c432ea1c2ae7f954254a5)](https://app.codacy.com/gh/Coordinate-Cat/miNE?utm_source=github.com&utm_medium=referral&utm_content=Coordinate-Cat/miNE&utm_campaign=Badge_Grade)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
