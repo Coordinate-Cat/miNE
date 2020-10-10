@@ -1,12 +1,18 @@
 # miNE
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d909b0478b8c432ea1c2ae7f954254a5)](https://app.codacy.com/gh/Coordinate-Cat/miNE?utm_source=github.com&utm_medium=referral&utm_content=Coordinate-Cat/miNE&utm_campaign=Badge_Grade)
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 <hr>
 
-<!-- [![Lighthouse Accessibility Badge](https://rawgit.com/Coordinate-Cat/miNE/master/test_result/lighthouse_accessibility.svg)](https://github.com/emazzotta/lighthouse-badges)
-[![Lighthouse Best Practices Badge](https://rawgit.com/emazzotta/lighthouse-badges/master/assets/img/scores/lighthouse_best-practices.svg)](https://github.com/emazzotta/lighthouse-badges)
-[![Lighthouse Performance Badge](https://rawgit.com/emazzotta/lighthouse-badges/master/assets/img/scores/lighthouse_performance.svg)](https://github.com/emazzotta/lighthouse-badges)
-[![Lighthouse PWA Badge](https://rawgit.com/emazzotta/lighthouse-badges/master/assets/img/scores/lighthouse_pwa.svg)](https://github.com/emazzotta/lighthouse-badges)
-[![Lighthouse SEO Badge](https://rawgit.com/emazzotta/lighthouse-badges/master/assets/img/scores/lighthouse_seo.svg)](https://github.com/emazzotta/lighthouse-badges) -->
+|  LightHouse categories  |  Scores                                                                          |
+| -                       | -                                                                                |
+|  Single                 |  ![Lighthouse Single Badge](test_results/lighthouse.svg)                         |
+|  Accessibility          |  ![Lighthouse Accessibility Badge](test_results/lighthouse_accessibility.svg)    |
+|  Best Practices         |  ![Lighthouse Best Practices Badge](test_results/lighthouse_best-practices.svg)  |
+|  Performance            |  ![Lighthouse Performance Badge](test_results/lighthouse_performance.svg)        |
+|  PWA                    |  ![Lighthouse PWA Badge](test_results/lighthouse_pwa.svg)                        |
+|  SEO                    |  ![Lighthouse SEO Badge](test_results/lighthouse_seo.svg)                        |
+
+<hr>
 
 ## Description
 miNE(new blog) - no CMS, only marked<br>
@@ -15,13 +21,24 @@ If I make a structure that parses markdown using the existing Sapper template, I
 
 <hr>
 
-## Stack
+## Stacks
 Language: Svelte<br>
 Framework :Sapper<br>
 Deploy: Vercel<br>
-Test: Cypress
+Test: Cypress<br>
+CodeReview: Codacy<br>
 
 <hr>
 
+## Usage
+### LightHouse Badges
+```
+All : npm run lh
+single : npm run lhs
+```
+
 ## Deploy with Vercel
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
+
+## License
+[LICENSE WTFPL](LICENSE/LICENSE-WTFPL)

@@ -9,7 +9,9 @@
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test": "run-p --race dev cy:run"
+    "test": "run-p --race dev cy:run",
+    "lh": "lighthouse-badges --urls https://minejp.vercel.app/ -o test_results",
+    "lhs": "lighthouse-badges --urls https://minejp.vercel.app/ -o test_results -s"
   },
   "dependencies": {
     "compression": "^1.7.1",
