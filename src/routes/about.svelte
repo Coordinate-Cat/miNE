@@ -1,3 +1,24 @@
+<script>
+const tree_1st_title = [
+  {title: 'Web'},
+  {title: 'Test'},
+];
+
+function compare(a, b) {
+  const idA = a.title.toUpperCase();
+  const idB = b.title.toUpperCase();
+  let comparison = 0;
+  if (idA > idB) {
+    comparison = 1;
+  } else if (idA < idB) {
+    comparison = -1;
+  }
+  return comparison;
+}
+tree_1st_title.sort(compare);
+// tree_2nd_title.sort(compare);
+// tree_links.sort(compare);
+</script>
 <style>
 h3 {
   margin-bottom: 15px;
@@ -147,9 +168,10 @@ summary::-webkit-details-marker {
       <div class="tree">
         <ul>
         <!-- from here -->
+        {#each tree_1st_title as {title}}
           <li>
             <details open>
-              <summary><h5>Web</h5></summary>
+              <summary><h5>{title}</h5></summary>
               <ul>
 
                 <li>
@@ -182,13 +204,25 @@ summary::-webkit-details-marker {
 
           <li>
             <details open>
-              <summary><h5>TEST</h5></summary>
+              <summary><h5>{title}</h5></summary>
               <ul>
-                <li>Beef</li>
-                <li>Pork</li>
+
+                <li>
+                  <details open>
+                  <summary><h5>Icons</h5></summary>
+                  <!-- <h5>Icons</h5> -->
+                  <ul>
+                    <li><a href="https://fontawesome.com/">Font Awesome</a></li>
+                    <li><a href="https://css.gg/">css.gg</a></li>
+                    <li><a href="https://icones.js.org/">Icones</a></li>
+                  </ul>
+                  </details>
+                </li>
+
               </ul>
             </details>
           </li>
+        {/each}
         <!-- So far -->
         </ul>
       </div>

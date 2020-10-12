@@ -29,6 +29,10 @@ p {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+a {
+  display: block
+}
 </style>
 
 <svelte:head>
@@ -38,14 +42,16 @@ p {
 <div class="container">
   <h1>Blog</h1>
   {#each posts as post, index}
-    <div class="post-item">
-      <h2>
-        <a rel='prefetch' href='blog/{post.slug}'>{post.title}</a>
-      </h2>
-      <p>{post.excerpt}</p>
-      <div class="post-item-footer">
-        <span class="post-item-date">— {post.printDate}</span>
+    <a rel='prefetch' href='blog/{post.slug}'>
+      <div class="post-item">
+        <h2>
+          {post.title}
+        </h2>
+        <p>{post.excerpt}</p>
+        <div class="post-item-footer">
+          <span class="post-item-date">— {post.printDate}</span>
+        </div>
       </div>
-    </div>
+    </a>
   {/each}
 </div>
