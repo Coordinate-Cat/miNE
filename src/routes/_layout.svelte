@@ -17,8 +17,6 @@
     position: relative;
     margin: 0 auto;
     margin-top: 20px;
-    max-width: 1400px;
-    padding: 1em 2em;
     box-sizing: border-box;
     width: 100%;
     display: flex;

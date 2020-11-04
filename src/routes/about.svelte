@@ -1,11 +1,14 @@
 <script>
-const tree_1st_title = [
-  {title: 'Web'},
-  {title: 'Test'},
+import WebTree from '../components/tree/WebTree.svelte';
+
+const urlInfo = [
+  {url: 'Web', title: 'links',},
+  // {title: 'Test', link: 'tests', url: 'https://fontawesome.com/', urlname: 'stawesome'},
+  // {title: 'fuck', link: 'fuck', url: 'https://fontawesome.com/', urlname: 'Testawesome'},
 ];
 
 function compare(a, b) {
-  const idA = a.title.toUpperCase();
+  const idA = a.title.toLowerCase();
   const idB = b.title.toUpperCase();
   let comparison = 0;
   if (idA > idB) {
@@ -15,9 +18,17 @@ function compare(a, b) {
   }
   return comparison;
 }
-tree_1st_title.sort(compare);
-// tree_2nd_title.sort(compare);
+urlInfo.sort(compare);
 // tree_links.sort(compare);
+
+
+const tree_1st_title = [
+  {title: 'Web', title2: 'links',},
+  {title: 'Test', title2: 'fuck',},
+  // {title: 'Test', link: 'tests', url: 'https://fontawesome.com/', urlname: 'stawesome'},
+  // {title: 'fuck', link: 'fuck', url: 'https://fontawesome.com/', urlname: 'Testawesome'},
+];
+tree_1st_title.sort(compare);
 </script>
 <style>
 h3 {
@@ -26,24 +37,9 @@ h3 {
 h4::before {
 	content: '> ';
 }
-h5::before {
-  font-family: "Font Awesome 5 Free";
-  content: '\f07c';
-  font-size: 15px;
-  margin-right: 5px;
-  margin-left: 5px;
-  }
 img {
   max-width: 200px;
   box-shadow: 15px 15px #000;
-}
-summary {
-  cursor: pointer;
-  outline: none;
-  height: 20px;
-}
-summary::-webkit-details-marker {
-  display: none;
 }
 @media (max-width:480px) {
   .container {
@@ -84,38 +80,6 @@ summary::-webkit-details-marker {
 .profile-text-description {
   margin-bottom: 5px;
 	color: #55FF55
-}
-
-.tree {
-  margin-top: -18px;
-}
-.tree, .tree ul, .tree li {
-  position: relative;
-  color: #fff;
-}
-.tree ul {
-  list-style: none;
-  padding-left: 24px;
-}
-.tree li::before, .tree li::after {
-  content: "";
-  position: absolute;
-  left: -12px;
-}
-.tree li::before {
-  border-top: 2px solid #fff;
-  top: 9px;
-  width: 8px;
-  height: 0;
-}
-.tree li::after {
-  border-left: 2px solid #fff;
-  height: 100%;
-  width: 0px;
-  top: 2px;
-}
-.tree ul > li:last-child::after {
-    height: 8px;
 }
 </style>
 
@@ -161,72 +125,5 @@ summary::-webkit-details-marker {
 
       <p>The design was inspired by <a href="https://kristopolous.github.io/BOOTSTRA.386/index.html" target=”_blank”>BOOTSTRA.386</a></p>
     </div>
-  </div>
-  <div class="item">
-    <div class="profile">
-      <h2 class="about-h2">Knowledge tree structure</h2>
-      <div class="tree">
-        <ul>
-        <!-- from here -->
-        {#each tree_1st_title as {title}}
-          <li>
-            <details open>
-              <summary><h5>{title}</h5></summary>
-              <ul>
-
-                <li>
-                  <details open>
-                  <summary><h5>Icons</h5></summary>
-                  <!-- <h5>Icons</h5> -->
-                  <ul>
-                    <li><a href="https://fontawesome.com/">Font Awesome</a></li>
-                    <li><a href="https://css.gg/">css.gg</a></li>
-                    <li><a href="https://icones.js.org/">Icones</a></li>
-                  </ul>
-                  </details>
-                </li>
-
-                <li>
-                  <details open>
-                  <summary><h5>Article</h5></summary>
-                  <!-- <h5>Icons</h5> -->
-                  <ul>
-                    <li><a href="https://fontawesome.com/">Font Awesome</a></li>
-                    <li><a href="https://css.gg/">css.gg</a></li>
-                    <li><a href="https://icones.js.org/">Icones</a></li>
-                  </ul>
-                  </details>
-                </li>
-
-              </ul>
-            </details>
-          </li>
-
-          <li>
-            <details open>
-              <summary><h5>{title}</h5></summary>
-              <ul>
-
-                <li>
-                  <details open>
-                  <summary><h5>Icons</h5></summary>
-                  <!-- <h5>Icons</h5> -->
-                  <ul>
-                    <li><a href="https://fontawesome.com/">Font Awesome</a></li>
-                    <li><a href="https://css.gg/">css.gg</a></li>
-                    <li><a href="https://icones.js.org/">Icones</a></li>
-                  </ul>
-                  </details>
-                </li>
-
-              </ul>
-            </details>
-          </li>
-        {/each}
-        <!-- So far -->
-        </ul>
-      </div>
-    </div>
-
   </div>
 </div>

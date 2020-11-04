@@ -1,14 +1,19 @@
+<script>
+import WebTree from '../components/tree/WebTree.svelte';
+</script>
+
 <style>
   .container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
     width: 100%;
+    height: 100vh;
+    background-color: #000;
   }
-  img {
+  /* img {
     max-width: 450px;
     height: auto;
-  }
+  } */
   @media (max-width:480px) {
   .container {
     flex-wrap: wrap !important;
@@ -18,18 +23,31 @@
       width: auto !important;
   }
 
-  img {
+  /* img {
     max-width: 100%;
     height: auto;
-  }
+  } */
 }
 </style>
 
 <svelte:head>
   <title>miNE</title>
 </svelte:head>
+<!-- <h1 class="line-1 anim-typewriter">Oops! You have found this page well. Sorry, This is just a personal page!</h1> -->
 
-<h1>Oops! You have found this page well. Sorry, This is just a personal page!</h1>
+<div class="container">
+
+<div class="container">
+  <div class="item">
+    <div class="profile">
+      <h2 class="about-h2">Knowledge tree structure</h2>
+      <WebTree />
+    </div>
+  </div>
+</div>
+
+</div>
+
 <div class="container">
   <div class="item">
     <img src="./gif/apple-1997.jpg" alt="">
