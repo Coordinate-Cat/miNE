@@ -1,14 +1,27 @@
 <script>
 import WebTree from '../components/tree/WebTree.svelte';
+import Blink from '../components/blink/Blink.svelte';
 </script>
 
 <style>
+  h2 {
+    border: 2px solid #fff;
+    width: fit-content;
+    margin: 20px 0 0 0;
+    line-height: 20px;
+    padding: 2px;
+    display: flex;
+  }
   .container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100vh;
+    margin: 0;
     background-color: #000;
+  }
+  .web-tree {
+    margin: 0 20px;
   }
   /* img {
     max-width: 450px;
@@ -19,7 +32,7 @@ import WebTree from '../components/tree/WebTree.svelte';
     flex-wrap: wrap !important;
   }
 
-  .item {
+  .web-tree_item {
       width: auto !important;
   }
 
@@ -37,18 +50,18 @@ import WebTree from '../components/tree/WebTree.svelte';
 
 <div class="container">
 
-<div class="container">
-  <div class="item">
-    <div class="profile">
-      <h2 class="about-h2">Knowledge tree structure</h2>
-      <WebTree />
+  <div class="web-tree">
+    <div class="web-tree_item">
+      <div class="web-tree_item_profile">
+        <h2>miNE<Blink /></h2>
+        <WebTree />
+      </div>
     </div>
   </div>
-</div>
 
 </div>
 
-<div class="container">
+<!-- <div class="container">
   <div class="item">
     <img src="./gif/apple-1997.jpg" alt="">
     <img src="./gif/yahoo.gif" alt="">
@@ -70,4 +83,4 @@ import WebTree from '../components/tree/WebTree.svelte';
     <img src="./gif/netscape-mini.gif" alt="">
     <img src="./gif/quicktime.gif" alt="">
   </div>
-</div>
+</div> -->

@@ -1,5 +1,4 @@
 <script>
-
 function compare(a, b) {
   const idA = a.title.toLowerCase();
   const idB = b.title.toUpperCase();
@@ -12,10 +11,13 @@ function compare(a, b) {
   return comparison;
 }
 
-const tree_info = [
-  {title: 'Test', url: 'https://fontawesome.com/'},
+const here_info = [
+  {title: 'home', url: 'https://minejp.vercel.app/'},
+  {title: 'about', url: 'https://minejp.vercel.app/about'},
+  {title: 'blog', url: 'https://minejp.vercel.app/blog'},
+  {title: 'github', url: 'https://github.com/Coordinate-Cat'},
 ];
-tree_info.sort(compare);
+here_info.sort(compare);
 </script>
 
 <style>
@@ -72,12 +74,31 @@ summary::-webkit-details-marker {
   <ul>
     <li>
       <details open>
-        <summary><h5>Web</h5></summary>
+        <summary><h5>Here</h5></summary>
         <ul>
 
           <li>
             <details open>
-            <summary><h5>Links</h5></summary>
+            <summary><h5>maps</h5></summary>
+            <ul>
+              {#each here_info as {title, url}}
+              <li><a href="{url}">{title}</a></li>
+              {/each}
+            </ul>
+            </details>
+          </li>
+
+        </ul>
+      </details>
+    </li>
+    <!-- <li>
+      <details open>
+        <summary><h5>Here</h5></summary>
+        <ul>
+
+          <li>
+            <details open>
+            <summary><h5>maps</h5></summary>
             <ul>
               {#each tree_info as {title, url}}
               <li><a href="{url}">{title}</a></li>
@@ -88,7 +109,7 @@ summary::-webkit-details-marker {
 
         </ul>
       </details>
-    </li>
+    </li> -->
   <!-- So far -->
   </ul>
 </div>

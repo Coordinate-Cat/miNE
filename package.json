@@ -3,7 +3,7 @@
   "description": "miNE(new blog) - no CMS, only marked",
   "version": "0.0.1",
   "scripts": {
-    "dev": "sapper dev",
+    "serve": "sapper dev",
     "build": "sapper build",
     "export": "sapper export",
     "start": "node __sapper__/build",

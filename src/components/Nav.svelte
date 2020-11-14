@@ -28,7 +28,7 @@ nav {
 	font-size: 18px;
 }
 ul {
-	margin: 0 0 0 20px ;
+	margin: 0 0 0 10px ;
 	padding: 0;
 }
 /* clearfix */
