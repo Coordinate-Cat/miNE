@@ -52,7 +52,7 @@ img {
 }
 .container {
   display: flex;
-  margin-top: 20px;
+  margin: 20px;
   width: 100%;
 }
 .item {
