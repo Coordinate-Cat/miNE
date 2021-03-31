@@ -59,7 +59,7 @@ a:active {
 }
 i {
 	margin-left: 3px;
-	font-size: 14px;
+	font-size: 12px;
 }
 #clock {
 	padding: 0 5px;

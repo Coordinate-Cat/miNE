@@ -12,17 +12,7 @@
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
-	background: #000;
-}
-
-::-webkit-scrollbar-piece-track {
-	background: #000;
-	border-left: solid 1px #000;
-}
-
-::-webkit-scrollbar-piece-thumb {
-	background: #333;
+	display: none;
 }
 
 
@@ -51,7 +41,7 @@ h1 {
 
 h1, h2 {
 	margin-bottom: 0;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 25px;
 	color: #000000;
 }

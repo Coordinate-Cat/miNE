@@ -12,8 +12,7 @@
 
 <style>
 .post-item {
-  border: solid 8px #000;
-  padding: 10px;
+  padding: 20px;
   margin: 8px 0;
 }
 
@@ -40,7 +39,6 @@ a {
 </svelte:head>
 
 <div class="container">
-  <h1>Blog</h1>
   {#each posts as post, index}
     <a rel='prefetch' href='blog/{post.slug}'>
       <div class="post-item">

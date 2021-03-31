@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <style>
 .blinking{
   width: 4px;

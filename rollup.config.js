@@ -22,6 +22,7 @@ export default {
   client: {
     input: config.client.input(),
     output: config.client.output(),
+    external: [ 'fs' ],
     plugins: [
       replace({
         'process.browser': true,
@@ -50,6 +51,7 @@ export default {
             ],
           ],
           plugins: [
+            nodeResolve({ preferBuiltins: false }),
             '@babel/plugin-syntax-dynamic-import',
             [
               '@babel/plugin-transform-runtime',

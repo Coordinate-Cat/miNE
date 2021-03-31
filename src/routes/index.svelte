@@ -1,5 +1,4 @@
 <script>
-import WebTree from '../components/tree/WebTree.svelte';
 import Blink from '../components/blink/Blink.svelte';
 </script>
 
@@ -36,10 +35,6 @@ import Blink from '../components/blink/Blink.svelte';
       width: auto !important;
   }
 
-  /* img {
-    max-width: 100%;
-    height: auto;
-  } */
 }
 </style>
 
@@ -54,7 +49,6 @@ import Blink from '../components/blink/Blink.svelte';
     <div class="web-tree_item">
       <div class="web-tree_item_profile">
         <h2>miNE<Blink /></h2>
-        <WebTree />
       </div>
     </div>
   </div>
