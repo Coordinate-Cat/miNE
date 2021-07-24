@@ -78,7 +78,7 @@ img {
       <img src="./image/me.png" alt="me">
 
       <div class="profile-text">
-        <h3>Resume</h3>
+        <!-- <h3>Resume</h3>
         <h4>Name</h4>
           <p class="profile-text-description">Ocat</p>
         <h4>Location</h4>
@@ -104,7 +104,7 @@ img {
             Chiben Gakuen Senior High School (Nara Prefecture)<br>
             Participated in the 66th All-Japan High School Ekiden Championship<br>
             Batch 2013-2015
-          </p>
+          </p> -->
       </div>
 
       <p>The design was inspired by <a href="https://kristopolous.github.io/BOOTSTRA.386/index.html" target=”_blank”>BOOTSTRA.386</a></p>
